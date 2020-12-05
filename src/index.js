@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+//const element = React.createElement(componente, propiedades, hijos);
+//const element = React.createElement('h1', {className: "saludo"}, "Habla pe varon");
+const root = document.getElementById('root');
+
+ReactDOM.render(<App/>, root);
+//ReactDOM.render(<h1 className="saludo">Hola pe varon</h1>, root)
+//ReactDOM.render(element, root);
+/*ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
-);
+);*/
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
